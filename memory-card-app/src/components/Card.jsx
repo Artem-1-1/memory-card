@@ -1,0 +1,16 @@
+export default function Card({img, name, onClick}) {
+  return (
+    <div className="card"
+    onClick={onClick}
+    tabIndex={0}
+    onKeyDown={(e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        onClick();
+      }
+    }}>
+    <img src={img} alt={name} />
+    <h2>{name}</h2>
+    </div>
+  )
+}
