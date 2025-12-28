@@ -1,5 +1,19 @@
-body {
-	background-image: url('../assets/background.avif');
-	background-size: cover;
+@font-face {
+  font-family: 'Touhou-Style';
+  src: url('../src/assets/fonts/DFPPOPCorn-W12.woff2') format('woff2');
+  font-display: swap;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+	justify-content: center;
+	background-image: url('../assets/images/background.avif');
+	background-size: cover;
+  font-family: 'Touhou-Style', sans-serif;
 }
