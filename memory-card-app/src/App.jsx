@@ -22,7 +22,7 @@ export default function App() {
   const [showDialog, setShowDialog] = useState(false);
 
   const handleClick = (image) => {
-    if(guessArr.includes(images)) {
+    if(guessArr.includes(image)) {
       setBestScore(Math.max(bestScore, score));
       setScore(0);
       setGuessArr([]);
